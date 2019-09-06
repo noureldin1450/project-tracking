@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+/*animation file*/
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+/*fadeIn animation*/
+@import url("https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,500,700&display=swap");
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/**/
+/** Website Font import **/
+/**  More font for backup  **/
+/*
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+    font-family: 'Montserrat', sans-serif; 
+*/
+/** f
+   ont-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
+ **/
+/**/
+/* Website Colors Var */
+/*reset file*/
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+/* 
+    Website Reset And Fix
+*/
+/*
+    remove all padding and margin from all the website
+    add line height to the elements    
+*/
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/*
+    add more style to the website
+    add the font style
+*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  background: #fdfdfd;
+  color: #212433;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*
+    add colors to the text
+*/
+h1, h2, h3, h4, p, a {
+  color: #212433;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*
+    remove the a decoration
+*/
+a {
+  text-decoration: none;
+}
+
+/*
+    make the images inside the website
+*/
+img {
+  width: 100%;
+}
+
+/* Website Main Style Code */
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(/imges/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+header .container {
+  width: 90%;
+  margin: auto;
+}
+
+header nav {
+  padding: 3rem 0px 1rem 0px;
+  width: 100%;
+  height: 40px;
+}
+
+header nav .nav-ham {
+  display: none;
+  width: 10%;
+  float: right;
+}
+
+@media (max-width: 375px) {
+  header nav .nav-ham {
+    display: block;
+  }
+}
+
+header nav .logo {
+  float: left;
+}
+
+header nav .logo img {
+  width: 100%;
+}
+
+header nav .nav-items {
+  float: right;
+}
+
+@media (max-width: 375px) {
+  header nav .nav-items {
+    display: none;
+    background: #fdfdfd;
+    padding: 4em;
+    z-index: 4;
+    -webkit-box-shadow: -1px 15px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: -1px 15px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+}
+
+header nav .nav-items li {
+  display: inline-block;
+  padding: 0px 1.5rem;
+}
+
+@media (max-width: 375px) {
+  header nav .nav-items li {
+    display: block;
+    padding: 1rem 5rem;
+  }
+}
+
+header nav .nav-items li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #212433;
+}
+
+header nav .nav-items li a:hover {
+  text-decoration: underline;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .nav-items .login {
+  opacity: .7;
+  color: #59585c;
+  padding-left: 4rem;
+}
+
+@media (max-width: 375px) {
+  header nav .nav-items .login {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  header nav .nav-items .login a {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .5rem 5rem;
+  }
+}
+
+header .ill {
+  width: 50%;
+  float: right;
+  padding-top: 5rem;
+}
+
+@media (max-width: 375px) {
+  header .ill {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+
+header .content {
+  width: 45%;
+  float: left;
+  margin-top: 3rem;
+}
+
+@media (max-width: 375px) {
+  header .content {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+header .content h2 {
+  color: #59585c;
+  font-size: 1rem;
+  letter-spacing: .5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  header .content h2 {
+    letter-spacing: .4rem;
+  }
+}
+
+header .content h2 .new {
+  color: #fdfdfd;
+  background-color: #212433;
+  padding: .3rem .7rem;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+
+header .content h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  header .content h1 {
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem 0px 0px .6rem;
+  }
+}
+
+header .content p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 0px;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  header .content p {
+    text-align: left;
+    font-weight: 500;
+    padding-left: .5rem;
+  }
+}
+
+header .content .btn {
+  padding-top: 2rem;
+}
+
+@media (max-width: 375px) {
+  header .content .btn {
+    margin-bottom: 4rem;
+  }
+}
+
+header .content .btn .red-btn {
+  background: #ff5c5d;
+  color: #fdfdfd;
+  padding: .9rem 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 375px) {
+  header .content .btn .red-btn {
+    padding: .9rem 1.1rem;
+  }
+}
+
+header .content .btn .red-btn:hover {
+  background: #fe8583;
+}
+
+header .content .btn a:last-child {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #59585c;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  opacity: .7;
+}
+/*# sourceMappingURL=style.css.map */

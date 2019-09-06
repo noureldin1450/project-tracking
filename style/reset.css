@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+/* Website Colors Var */
+/* 
+    Website Reset And Fix
+*/
+/*
+    remove all padding and margin from all the website
+    add line height to the elements    
+*/
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/*
+    add more style to the website
+    add the font style
+*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  background: #fdfdfd;
+  color: #212121;
+}
+
+body {
+  height: 2000px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*
+    add colors to the text
+*/
+h1, h2, h3, h4, p, a {
+  color: #212121;
+}
+
+/*
+    remove the a decoration
+*/
+a {
+  text-decoration: none;
+}
+
+/*
+    make the images inside the website
+*/
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=reset.css.map */
